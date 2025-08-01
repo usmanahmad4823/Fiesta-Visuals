@@ -21,7 +21,7 @@ const Portfolio = () => {
 
           <SectionHeading sectionHeading="Selected Projects" />
         </div>
-        <main className=" pt-[2rem] w-full flex flex-col  items-center ">
+        <main className=" pt-[2rem] w-full flex flex-col items-center ">
           <div className=" z-14 sticky bottom-0 box w-full h-full flex flex-col gap-5 overflow-hidden rounded-3xl  ">
             <PortfolioProject img={portfolio1} />
           </div>

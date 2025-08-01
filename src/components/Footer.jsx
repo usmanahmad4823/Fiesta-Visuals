@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-  const navItems = ["Home", "Portfolio", "Services", "Contact"];
+  const navItems = ["Home", "Portfolio", "Contact"];
   const icons = [
     {
       href: "https://www.instagram.com",
@@ -21,51 +21,74 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-red-400 w-full h-full">
-      Hello World
+    <footer className=" relative z-40 rounded-t-4xl bg-[#F7F7F7] w-full h-full flex flex-col items-center justify-center pt-[5rem]">
+      <div className="flex flex-col items-center justify-center footerTop ">
+        <h1 className="  font-bold pb-2 text-4xl">Fiesta Visuals</h1>
+        <p className=" text-gray-600 text-sm ">
+          Design That Defines Brands
+        </p>
+      </div>
+      <div >
+        <div className=" flex flex-wrap justify-center  gap-8 py-4">
+          {icons.map(({ href, Icon, label }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="bg-white text-gray-600 hover:text-black w-8 h-8 flex items-center justify-center rounded-full border border-gray-300 hover:border-black hover:border-1 transition"
+            >
+              <Icon className="text-xl" />
+            </a>
+          ))}
+        </div>
+      </div>
+
+<div className="flex flex-col md:flex-row items-center justify-between w-[70%] pt-4 pb-8">
+
+        {navItems.map((item, index) => (
+          <a
+            key={index}
+            href="#"
+            className=" text-[11px] mt-8  px-6 py-2 rounded-full border border-gray-200 bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 text-black"
+          >
+            {item}
+          </a>
+        ))}
+      </div>
+
+      <div className=" licenses">
+           <div className="flex flex-col md:flex-row items-center justify-between w-full gap-2 px-4 py-6 text-[10px] text-gray-600 border-t border-gray-200">
+      {/* Left text */}
+      <div className="footer_credit-text text-center md:text-left">
+        © 2025 Fiesta Visuals. All rights reserved.
+      </div>
+
+      {/* Right links */}
+      <div className="flex flex-wrap items-center justify-center md:justify-end gap-4">
+        <a
+          href="/template-info/style-guide"
+          className="bg-[#FFFFFF] underline footer_legal-link hover:underline transition"
+        >
+          Style Guide
+        </a>
+        <a
+          href="/template-info/licenses"
+          className="bg-[#FFFFFF]underline footer_legal-link hover:underline transition"
+        >
+          Licenses
+        </a>
+        <a
+          href="/template-info/changelog"
+          className="bg-[#FFFFFF]underline footer_legal-link hover:underline transition"
+        >
+          Changelog
+        </a>
+      </div>
+    </div>
+      </div>
     </footer>
-    // <footer className="bg-[#F7F7F7] text-center w-full">
-    //   <div className=" bg-amber-300 container mx-auto px-4 py-12 flex flex-col items-center">
-    //     <h1 className="text-gray-800  font-bold mb-2">
-    //       Fiesta Visuals
-    //     </h1>
-    //     <p className= "bg-amber-700 text-gray-600 ">
-    //       Design That Defines Brands
-    //     </p>
-
-    //     {/* Social Icons */}
-    //     <div className=" bg-green-400 flex flex-wrap justify-center gap-4 mb-6">
-    //       {icons.map(({ href, Icon, label }) => (
-    //         <a
-    //           key={label}
-    //           href={href}
-    //           target="_blank"
-    //           rel="noopener noreferrer"
-    //           aria-label={label}
-    //           className="bg-white text-gray-600 hover:text-black w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:border-black transition"
-    //         >
-    //           <Icon className="text-xl" />
-    //         </a>
-    //       ))}
-    //     </div>
-
-    //     {/* Navigation */}
-    //     <div className=" bg-pink-400 grid grid-cols-2 sm:grid-cols-3">
-    //       {navItems.map((item, index) => (
-    //         <a
-    //           key={index}
-    //           href="#"
-    //           className="text-xs sm:text-sm px-4 py-2 rounded-full border border-gray-200 bg-white/30 backdrop-blur-md hover:bg-white/60 transition-all duration-300 text-black"
-    //         >
-    //           {item}
-    //         </a>
-    //       ))}
-    //     </div>
-
-    //     {/* Copyright (Optional) */}
-    //     <p className=" bg-emerald-600 mt-8 text-xs text-gray-400">&copy; 2025 Fiesta Visuals. All rights reserved.</p>
-    //   </div>
-    // </footer>
   );
 };
 
