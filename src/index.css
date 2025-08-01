@@ -1,0 +1,26 @@
+/* src/index.css or src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+@import "tailwindcss";
+
+
+.card, .card2, .card3 {
+  animation: moveAndRotate 4.5s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+}
+
+@keyframes moveAndRotate {
+  from {
+    transform: translateY(0px) rotateY(0deg);
+  }
+  to {
+    transform: translateY(-1000px) rotateY(360deg);
+  }
+}
+
+.card2 {
+  animation-name: moveAndRotate;
+  animation-delay: 2.8s; /* you missed 's' for seconds */
+}
