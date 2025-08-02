@@ -33,7 +33,7 @@ const Footer = () => {
     //     backgroundColor: "#000", // optional if you want black base
     //   }}
     
-    <footer className=" relative z-40 rounded-t-4xl bg-[#F7F7F7] w-full h-full flex flex-col items-center justify-center pt-[5rem] mt-[5rem] ">
+    <footer className=" relative z-40 rounded-t-4xl bg-[#F7F7F7] w-full h-full flex flex-col items-center justify-center pt-[5rem]">
       <div className="flex flex-col items-center justify-center footerTop ">
         <h1 className="  font-bold pb-2 text-4xl">Fiesta Visuals</h1>
         <p className=" text-gray-600 text-sm ">
