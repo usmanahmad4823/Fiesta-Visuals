@@ -17,6 +17,8 @@ import ServiceCard from "./components/ServiceCard";
 import ServicesSection from "./components/ServicesSection";
 import BreakLine from "./components/BreakLine";
 import Footer from "./components/Footer";
+import ProjectDetail from "./components/projectDetail";
+import Overview from "./components/Overview";
 
 const App = () => {
   useEffect(() => {
@@ -31,7 +33,7 @@ const App = () => {
       <Testimonial/>
       <ServicesSection/>
       <Footer/>
-     
+     {/* <ProjectDetail/> */}
     </>
   );
 };
