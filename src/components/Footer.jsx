@@ -21,7 +21,8 @@ const Footer = () => {
   ];
 
   return (
-    // // try this background style in the footer
+
+    // // try this background style in the footer  
     // className="w-screen h-screen"
     //   style={{
     //     backgroundImage: `
@@ -31,13 +32,15 @@ const Footer = () => {
     //     backgroundSize: "cover",
     //     backgroundColor: "#000", // optional if you want black base
     //   }}
-
-    <footer className=" relative z-40 rounded-t-4xl bg-[#F7F7F7] w-full h-full flex flex-col items-center justify-center pt-[5rem]">
+    
+    <footer className=" relative z-40 rounded-t-4xl bg-[#F7F7F7] w-full h-full flex flex-col items-center justify-center pt-[5rem] mt-[5rem] ">
       <div className="flex flex-col items-center justify-center footerTop ">
         <h1 className="  font-bold pb-2 text-4xl">Fiesta Visuals</h1>
-        <p className=" text-gray-600 text-sm ">Design That Defines Brands</p>
+        <p className=" text-gray-600 text-sm ">
+          Design That Defines Brands
+        </p>
       </div>
-      <div>
+      <div >
         <div className=" flex flex-wrap justify-center  gap-8 py-4">
           {icons.map(({ href, Icon, label }) => (
             <a
@@ -54,11 +57,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between w-[70%] pt-4 pb-8">
+<div className="flex flex-col md:flex-row items-center justify-between w-[70%] pt-4 pb-8">
+
         {navItems.map((item, index) => (
           <a
             key={index}
-            href="#"
+            href={`/${item}`}
             className=" text-[11px] mt-8  px-6 py-2 rounded-full border border-gray-200 bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 text-black"
           >
             {item}
@@ -67,34 +71,34 @@ const Footer = () => {
       </div>
 
       <div className=" licenses">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full gap-2 px-4 py-6 text-[10px] text-gray-600 border-t border-gray-200">
-          {/* Left text */}
-          <div className="footer_credit-text text-center md:text-left">
-            © 2025 Fiesta Visuals. All rights reserved.
-          </div>
+           <div className="flex flex-col md:flex-row items-center justify-between w-full gap-2 px-4 py-6 text-[10px] text-gray-600 border-t border-gray-200">
+      {/* Left text */}
+      <div className="footer_credit-text text-center md:text-left">
+        © 2025 Fiesta Visuals. All rights reserved.
+      </div>
 
-          {/* Right links */}
-          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4">
-            <a
-              href="/template-info/style-guide"
-              className="bg-[#FFFFFF] underline footer_legal-link hover:underline transition"
-            >
-              Style Guide
-            </a>
-            <a
-              href="/template-info/licenses"
-              className="bg-[#FFFFFF]underline footer_legal-link hover:underline transition"
-            >
-              Licenses
-            </a>
-            <a
-              href="/template-info/changelog"
-              className="bg-[#FFFFFF]underline footer_legal-link hover:underline transition"
-            >
-              Changelog
-            </a>
-          </div>
-        </div>
+      {/* Right links */}
+      <div className="flex flex-wrap items-center justify-center md:justify-end gap-4">
+        <a
+          href="/template-info/style-guide"
+          className="bg-[#FFFFFF] underline footer_legal-link hover:underline transition"
+        >
+          Style Guide
+        </a>
+        <a
+          href="/template-info/licenses"
+          className="bg-[#FFFFFF]underline footer_legal-link hover:underline transition"
+        >
+          Licenses
+        </a>
+        <a
+          href="/template-info/changelog"
+          className="bg-[#FFFFFF]underline footer_legal-link hover:underline transition"
+        >
+          Changelog
+        </a>
+      </div>
+    </div>
       </div>
     </footer>
   );

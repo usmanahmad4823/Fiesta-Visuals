@@ -8,14 +8,14 @@ const Navbar = () => {
   const navItems = ["Home", "Portfolio", "Services", "Contact"];
 
   return (
-    <nav className="fixed z-30 top-0 w-full px-[11vw] text-black">
+    <nav className="fixed z-50 top-0 w-full px-[11vw] text-black">
       <div className=" position relative backdrop-blur-lg bg-white/20 border border-gray-300 shadow-xl rounded-b-3xl mx-auto px-2 py-1">
         {/* Desktop View */}
         <div className="hidden md:flex w-full items-center justify-between">
           {navItems.map((item, index) => (
             <a
               key={index}
-              href="#"
+              href={`/${item}`}
               className="text-[11px] px-6 py-2 rounded-full border border-gray-200 bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 text-black"
             >
               {item}

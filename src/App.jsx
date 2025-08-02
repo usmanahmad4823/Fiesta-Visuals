@@ -14,7 +14,7 @@ import { div } from "framer-motion/client";
 import SectionHeading from "./components/SectionHeading";
 import Testimonial from "./components/Testimonial";
 import ServiceCard from "./components/ServiceCard";
-import ServicesSection from "./components/ServicesSection";
+import Services from "./components/Services";
 import BreakLine from "./components/BreakLine";
 import Footer from "./components/Footer";
 import ProjectDetail from "./components/projectDetail";
@@ -27,12 +27,12 @@ const App = () => {
 
   return (
     <>
-      <Home />
+      {/* <Home />
       <AboutUs />
       <Portfolio />
       <Testimonial/>
-      <ServicesSection/>
-      <Footer/>
+      <Services/>
+      <Footer/> */}
      {/* <ProjectDetail/> */}
     </>
   );
