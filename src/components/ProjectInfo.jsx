@@ -12,8 +12,8 @@ const ProjectInfo = ({projectName, dateOfProject}) => {
       </div>
 
       {/* Centered Button */}
-      <div className="flex items-center justify-center">
-        <Button btn="View" />
+      <div className="flex items-center justify-center z-10">
+        <Button btn="View"  visit="projectView"/>
       </div>
     </div>
   );

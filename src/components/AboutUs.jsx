@@ -36,7 +36,7 @@ const AboutUs = () => {
             </div>
 
             {/* Contact Button */}
-            <Button btn="Contact Us" />
+            <Button btn="Contact Us" visit="services" />
 
             {/* Successful Projects Block */}
             <div className=" flex flex-col items-center intro-content-block text-right">

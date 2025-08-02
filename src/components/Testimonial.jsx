@@ -5,7 +5,7 @@ import BreakLine from "./BreakLine";
 
 const Testimonial = () => {
   return (
-    <section className="text-gray-700 rounded-4xl z-50 relative inset-0 bg-[#FFFFFF] py-[2.5rem]  text-center">
+    <section className="text-gray-700 rounded-4xl z-4 relative inset-0 bg-[#FFFFFF] py-[2.5rem]  text-center">
       <div className="relative  bg-[#FFF] py-[2.4rem]">
         <div className="testimonials-top">
           <PageSubtitle title="Testimonials" />
