@@ -2,7 +2,6 @@
 import React from "react";
 import AboutUs from "./AboutUs";
 import Navbar from "./Navbar";
-import SectionHeading from "./SectionHeading";
 import Card from "./Card";
 import Portfolio from "./Portfolio";
 import Testimonial from "./Testimonial";

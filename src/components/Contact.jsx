@@ -1,7 +1,6 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import PageSubtitle from "./PageSubtitle";
-import BreakLine from "./BreakLine";
 import SocialMedia from "./SocialMedia";
 import ContactCards from "./ContactCards";
 import FAQ from "./FAQ";

@@ -1,7 +1,5 @@
 import React from "react";
-import poster1 from "../assets/poster1.jpg";
 import PageSubtitle from "./PageSubtitle";
-import Button from "./Button";
 import PortfolioProject from "./PortfolioProject";
 import portfolio1 from "../assets/portfolio1.webp";
 import portfolio2 from "../assets/portfolio2.webp";

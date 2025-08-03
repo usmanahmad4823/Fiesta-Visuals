@@ -1,7 +1,6 @@
 import React from "react";
 import PageSubtitle from "./PageSubtitle";
 import SectionHeading from "./SectionHeading";
-import BreakLine from "./BreakLine";
 
 const Testimonial = () => {
   return (
