@@ -9,7 +9,7 @@ const ContactCards = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
       linkText: "hello@createnix.com",
-      linkHref: "mailto:hello@createnix.com",
+      linkHref: "mailto:hello@fiestavisuals.com",
     },
     {
       icon: <MdPhone size={32} />,
