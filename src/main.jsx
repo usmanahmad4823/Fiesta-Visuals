@@ -14,6 +14,7 @@ import ServicesSection from "./components/Services.jsx";
 import Home from "./components/Home.jsx";
 import ProjectDetail from "./components/projectDetail.jsx";
 import { Route } from "react-router-dom";
+import Contact from "./components/Contact.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="portfolio" element={<Portfolio />} />
       <Route path="services" element={<ServicesSection />} />
       <Route path="projectView" element={<ProjectDetail />} />
+      <Route path="contact" element={<Contact/> } />
     </Route>
   )
 );

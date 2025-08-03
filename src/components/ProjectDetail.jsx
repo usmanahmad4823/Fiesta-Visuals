@@ -75,11 +75,11 @@ const ProjectDetail = () => {
         </div>
          <main className=" pt-[4rem] w-full flex items-center justify-around ">
           <div className=" z-14 sticky bottom-0 box w-[40%] h-[25rem] flex flex-col gap-5 overflow-hidden rounded-3xl  ">
-            <PortfolioProject img={portfolio1} />{" "}
+            <PortfolioProject img={portfolio1} />
             {/*Remove Project Portfolio & ADD IMAGE HERE  */}
           </div>
           <div className=" z-13 sticky bottom-0 box w-[40%] h-[25rem] flex flex-col gap-5 overflow-hidden rounded-3xl  ">
-            <PortfolioProject img={portfolio2} />{" "}
+            <PortfolioProject img={portfolio2} />
             {/*Remove Project Portfolio & ADD IMAGE HERE  */}
           </div>
         </main>

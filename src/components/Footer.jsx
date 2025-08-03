@@ -5,6 +5,7 @@ import {
   FaDribbble,
   FaXing,
 } from "react-icons/fa";
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   const navItems = ["Home", "Portfolio", "Contact"];
@@ -41,20 +42,7 @@ const Footer = () => {
         </p>
       </div>
       <div >
-        <div className=" flex flex-wrap justify-center  gap-8 py-4">
-          {icons.map(({ href, Icon, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-              className="bg-white text-gray-600 hover:text-black w-8 h-8 flex items-center justify-center rounded-full border border-gray-300 hover:border-black hover:border-1 transition"
-            >
-              <Icon className="text-xl" />
-            </a>
-          ))}
-        </div>
+        <SocialMedia/>
       </div>
 
 <div className="flex flex-col md:flex-row items-center justify-between w-[70%] pt-4 pb-8">

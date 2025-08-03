@@ -4,7 +4,7 @@ import BreakLine from "./BreakLine";
 const Overview = () => {
   return (
     <section className="flex flex-col items-center justify-center w-full px-4 py-16">
-      <div className=" max-w-[50%] p-4 " >
+      <div className="  w-full md:max-w-[50%]  p-4 " >
         <h1 className="text-4xl font-semibold mb-8">Overview</h1>
 
         <p className="text-[12px] leading-5 mb-6">
