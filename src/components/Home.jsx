@@ -16,7 +16,7 @@ const Home = () => {
 
         <div className="relative min-h-screen w-full flex flex-col justify-center items-center bg-[#F7F7F7] pt-24 px-4">
           <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className=" fixed z-30 text-center text-black max-w-5xl mx-auto"
           >
             <h1 className="relative z-30 text-5xl sm:text-5xl md:text-6xl lg:text-8xl font-normal mb-6">
