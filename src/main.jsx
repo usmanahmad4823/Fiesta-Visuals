@@ -12,7 +12,7 @@ import Layout from "./components/Layout.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import ServicesSection from "./components/Services.jsx";
 import Home from "./components/Home.jsx";
-import ProjectDetail from "./components/projectDetail.jsx";
+import ProjectDetail from "./components/ProjectDetail.jsx";
 import { Route } from "react-router-dom";
 import Contact from "./components/Contact.jsx";
 
