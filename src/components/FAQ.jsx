@@ -39,23 +39,32 @@ const FAQ = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {faqData.map((item, index) => (
-          <div key={index} className="border border-gray-300 rounded-xl shadow-sm">
+          <div
+            key={index}
+            className="border border-gray-300 rounded-xl shadow-sm transition-all duration-300"
+          >
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full text-left px-4 py-4 flex items-center justify-between hover:bg-gray-50 transition"
             >
-              <span className="text-[12px]  font-medium">
-                {item.question}
-              </span>
-              <span className="text-xl">
+              <span className="text-[12px] font-medium">{item.question}</span>
+              <span
+                className={`text-xl transform transition-transform duration-300 ${
+                  activeIndex === index ? "rotate-180" : ""
+                }`}
+              >
                 {activeIndex === index ? <FiMinus /> : <FiPlus />}
               </span>
             </button>
-            {activeIndex === index && (
-              <div className="px-4 pb-4 text-gray-600 text-[12px] leading-6">
-                {item.answer}
-              </div>
-            )}
+
+            {/* Answer Section with Smooth Transition */}
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                activeIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+              } px-4 text-gray-600 text-[12px] leading-6`}
+            >
+              <div className="py-2">{item.answer}</div>
+            </div>
           </div>
         ))}
       </div>
