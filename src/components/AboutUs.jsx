@@ -2,6 +2,8 @@ import React from "react";
 import Button from "./Button";
 import PageSubtitle from "./PageSubtitle";
 import BreakLine from "./BreakLine";
+import "./AboutStyle.css"
+
 
 const AboutUs = () => {
   return (
@@ -24,13 +26,13 @@ const AboutUs = () => {
           <div className=" w-full flex items-center justify-around ">
             {/* Years of Experience Block */}
             <div className=" flex flex-col items-center intro-content-block">
-              <span className="text-[8vh] font-bold">
+              <span className="text-[8vh] font-bold big-heading">
                 <span className="text-md font-light text-gray-400 pb-6 ">
                   +
                 </span>
                 20
               </span>
-              <div className="text-base mt-2 text-left">
+              <div className="text-base mt-2 text-left line">
                 Years of Experience
               </div>
             </div>
@@ -40,13 +42,13 @@ const AboutUs = () => {
 
             {/* Successful Projects Block */}
             <div className=" flex flex-col items-center intro-content-block text-right">
-              <span className="text-[8vh] font-bold">
+              <span className="text-[8vh] font-bold big-heading">
                 <span className="text-md font-light text-gray-400 pb-6 ">
                   +
                 </span>
                 99
               </span>
-              <div className="text-base mt-2 text-right">
+              <div className="text-base mt-2 text-right line">
                 Successful Projects
               </div>
             </div>
