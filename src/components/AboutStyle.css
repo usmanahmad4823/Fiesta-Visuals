@@ -3,11 +3,9 @@
 /* When screen width is 768px or smaller */
 @media (max-width: 768px) {
   .big-heading {
-    background-color: rgb(0, 237, 0);
     font-size: 5vw;
   }
   .line {
-    background-color: rgb(0, 237, 0);
     font-size: 2vw;
   }
 
